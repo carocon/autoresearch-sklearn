@@ -30,20 +30,8 @@ You own the full experiment loop, including git. Act autonomously without asking
 - Feature engineering (PolynomialFeatures, interactions, PCA...)
 - Training strategy (cross-validation for model selection, calibration...)
 
-## Suggested research directions
-1. SVM with RBF kernel — strong on small, well-separated datasets like Iris
-2. GradientBoostingClassifier — often beats RandomForest on tabular data
-3. MLPClassifier — try (64, 32) and (128, 64, 32) hidden layers
-4. VotingClassifier — ensemble of top performers found so far
-5. PolynomialFeatures (degree=2) before any linear model
-6. Hyperparameter search on whatever is working best
-
 ## Scoreboard
 - `cat .best_score` — current best
 - `git log --oneline` — kept improvements only
 - `cat results.tsv` — full log including failures
 
-## Target
-- Baseline: ~0.90
-- Good: >= 0.9667
-- Perfect: 1.0000 (achievable on this split)
