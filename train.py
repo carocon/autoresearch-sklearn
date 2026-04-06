@@ -24,6 +24,7 @@ import json
 import time
 import numpy as np
 from sklearn.ensemble import ExtraTreesClassifier
+from sklearn.svm import SVC
 
 TIME_BUDGET_SECONDS = 60
 
@@ -41,9 +42,9 @@ def train():
 
     # --- Agent modifies below this line ---
 
-    model = ExtraTreesClassifier(
-        n_estimators=500,
-        max_depth=None,
+    model = SVC(
+        kernel='linear',
+        C=1.0,
         random_state=42,
     )
     model.fit(X_train, y_train)
