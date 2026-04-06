@@ -1,4 +1,4 @@
-# nanoml
+# autoresearch-sklearn
 
 A CPU-friendly autonomous ML research loop, inspired by [karpathy/autoresearch](https://github.com/karpathy/autoresearch).
 
@@ -23,9 +23,7 @@ The agent runs on a **feature branch**. Every improvement is committed there. `m
 **Requirements:** Python 3.10+, git, a Claude Code or Codex subscription.
 
 ```bash
-# 1. Clone and install
-git clone https://github.com/yourusername/nanoml
-cd nanoml
+# 1. Clone the repository and install
 pip install scikit-learn numpy
 
 # 2. Prepare data (one-time, takes a second)
