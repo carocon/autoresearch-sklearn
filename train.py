@@ -41,11 +41,8 @@ def train():
 
     # --- Agent modifies below this line ---
 
-    model = RandomForestClassifier(
-        n_estimators=100,
-        max_depth=None,
-        random_state=42,
-    )
+    from sklearn.svm import SVC
+    model = SVC(kernel='rbf', C=1.0, gamma='scale', random_state=42)
     model.fit(X_train, y_train)
 
     # --- Agent modifies above this line ---
