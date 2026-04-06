@@ -7,7 +7,7 @@ You own the full experiment loop, including git. Act autonomously without asking
 
 1. **Form a hypothesis** — decide what to change in `train.py` and why
 2. **Edit `train.py`** — implement the change
-3. **Evaluate** — run `python run.py` and read the RESULT line
+3. **Evaluate** — run `uv run python run.py` and read the RESULT line
 4. **Commit or revert:**
    - `RESULT: IMPROVED` → `git add train.py && git commit -m "exp<N>: <description> val_accuracy <score>"`
    - `RESULT: NO IMPROVEMENT` → `git checkout HEAD -- train.py`

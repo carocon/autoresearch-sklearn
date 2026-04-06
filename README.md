@@ -22,17 +22,17 @@ The agent runs on a **feature branch**. Every improvement is committed there. `m
 
 ## Quick start
 
-**Requirements:** Python 3.10+, git, a Claude Code or Codex subscription.
+**Requirements:** Python 3.10+, git, [uv](https://docs.astral.sh/uv/), a Claude Code or Codex subscription.
 
 ```bash
-# 1. Clone the repository and install
-pip install scikit-learn numpy
+# 1. Clone the repository and install dependencies
+uv sync
 
 # 2. Prepare data (one-time, takes a second)
-python prepare.py
+uv run python prepare.py
 
 # 3. Establish the baseline
-python run.py
+uv run python run.py
 git add .
 git commit -m "baseline"
 
@@ -53,7 +53,7 @@ Or with Codex / any other agent that can run shell commands and edit files.
 The agent will:
 - Read `program.md` for research directions
 - Propose a change to `train.py`
-- Run `python run.py` to evaluate
+- Run `uv run python run.py` to evaluate
 - Commit improvements, revert failures
 - Log everything to `results.tsv`
 - Repeat
