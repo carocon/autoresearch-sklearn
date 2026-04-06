@@ -41,8 +41,8 @@ def train():
 
     # --- Agent modifies below this line ---
 
-    from sklearn.svm import SVC
-    model = SVC(kernel='rbf', C=1.0, gamma='scale', random_state=42)
+    from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+    model = LinearDiscriminantAnalysis(solver='svd')
     model.fit(X_train, y_train)
 
     # --- Agent modifies above this line ---
