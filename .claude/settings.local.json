@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git checkout:*)",
+      "Bash(printf \"2\\\\t$\\(date -u +%Y-%m-%dT%H:%M:%SZ\\)\\\\t0.9667\\\\tno\\\\tSVM RBF C=10 no improvement\\\\n\")",
+      "Bash(printf \"7\\\\t$\\(date -u +%Y-%m-%dT%H:%M:%SZ\\)\\\\t0.9333\\\\tno\\\\tKNN k=3 worse\\\\n\")",
+      "Bash(printf \"8\\\\t$\\(date -u +%Y-%m-%dT%H:%M:%SZ\\)\\\\t0.9667\\\\tno\\\\tPolyFeatures\\(2\\)+SVM no improvement\\\\n\")",
+      "Bash(printf \"9\\\\t$\\(date -u +%Y-%m-%dT%H:%M:%SZ\\)\\\\t0.9667\\\\tno\\\\tVotingClassifier\\(SVM+GBT+RF\\) hard no improvement\\\\n\")"
+    ]
+  }
+}
