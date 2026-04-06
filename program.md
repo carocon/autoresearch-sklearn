@@ -25,10 +25,7 @@ You own the full experiment loop, including git. Act autonomously without asking
 - You are on a feature branch — do not merge or push to main
 
 ## What you can change in train.py
-- Model class (RandomForest, GradientBoosting, SVM, MLP, KNN, ensembles...)
-- Any hyperparameters
-- Feature engineering (PolynomialFeatures, interactions, PCA...)
-- Training strategy (cross-validation for model selection, calibration...)
+- Model class, any hyperparameters, feature engineering, training strategy (e.g. cross-validation for model selection, calibration...), etc.
 
 ## Scoreboard
 - `cat .best_score` — current best
