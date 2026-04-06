@@ -1,3 +1,5 @@
+> **Work in progress** — this project is under active development and may change significantly.
+
 # autoresearch-sklearn
 
 A CPU-friendly autonomous ML research loop, inspired by [karpathy/autoresearch](https://github.com/karpathy/autoresearch).
